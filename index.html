@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NELIS France · Froid industriel</title>
+<meta name="description" content="Vente, location et service de groupes d’eau glacée jusqu’à −40 °C, pompes à chaleur et climatisation. Conception clé en main, intervention le jour même en urgence. Vesoul et Villmergen.">
+<meta name="theme-color" content="#05070d">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="NELIS France SAS">
+<meta property="og:title" content="NELIS France · Froid industriel">
+<meta property="og:description" content="Vente, location et service de groupes d’eau glacée jusqu’à −40 °C, pompes à chaleur et climatisation. Conception clé en main, intervention le jour même en urgence. Vesoul et Villmergen.">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/img/g-texture-givre-784.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){var d=document.documentElement;d.classList.remove('no-js');d.classList.add('js');var c=false;try{c=localStorage.getItem('nelis-calme')==='1'}catch(e){}if(c||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))d.classList.add('calme');try{if(sessionStorage.getItem('nelis-vu'))d.classList.add('intro-courte');sessionStorage.setItem('nelis-vu','1')}catch(e){}})();</script>
+</head>
+<body data-page="accueil">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<div class="gel" id="gel" aria-hidden="true">
+  <img class="gel__texture" src="assets/img/g-texture-givre-784.webp" alt="" width="784" height="1168">
+  <canvas class="gel__canvas"></canvas>
+  <div class="gel__marque">
+    <img class="gel__mono" src="assets/img/logo-monogramme-240.webp" alt="" width="120" height="120">
+    <span class="gel__temp mono" data-gel-temp>+24 °C</span>
+  </div>
+</div>
+
+<div class="urgence" role="region" aria-label="Contacts d’urgence">
+  <div class="cadre urgence__cadre">
+    <p class="urgence__titre"><span class="pastille pastille--chaud" aria-hidden="true"></span>Urgence<span class="urgence__titre-long">&nbsp;frigorifique</span></p>
+    <p class="urgence__numeros">
+      <span><span class="urgence__pays">France </span><a href="tel:+33384689650">+33 3 84 68 96 50</a></span>
+      <span class="urgence__ch">Suisse <a href="tel:+41566119062">+41 56 611 90 62</a></span>
+    </p>
+    <div class="urgence__droite">
+      <p class="urgence__statut"><span class="pastille pastille--off" data-ouvert-pastille aria-hidden="true"></span><span data-ouvert-court>Magasin de Vesoul</span></p>
+      <button class="urgence__calme" type="button" data-calme aria-pressed="false">Réduire les animations</button>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="cadre nav__cadre">
+    <a class="marque marque--img" href="index.html" aria-label="NELIS France SAS, accueil">
+      <img src="assets/img/logo-nelis-sombre-480.webp" srcset="assets/img/logo-nelis-sombre-480.webp 480w, assets/img/logo-nelis-sombre-960.webp 960w" sizes="110px" alt="NELIS France SAS" width="103" height="34">
+    </a>
+    <nav class="nav__liens" aria-label="Navigation principale">
+      <a href="groupes-eau-glacee.html" data-nav="eau">Groupes d’eau glacée</a>
+      <a href="location.html" data-nav="location">Location</a>
+      <a href="index.html#service" data-nav="service">Service</a>
+      <a href="index.html#gammes" data-nav="gammes">Gammes</a>
+      <a href="index.html#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__son" type="button" aria-pressed="false" data-son aria-label="Activer le son d’ambiance">
+        <span class="son-ondes" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="nav__son-txt" data-son-txt>Son</span>
+      </button>
+      <a class="btn btn--glace btn--petit nav__devis" href="index.html#devis" data-magnetic><span>Demander un devis</span></a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" data-burger><i></i><i></i><span class="visuellement-cache">Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="cadre">
+    <nav class="menu__liens" aria-label="Menu">
+      <a href="index.html" data-nav="accueil" aria-current="page">Accueil</a>
+      <a href="groupes-eau-glacee.html" data-nav="eau">Groupes d’eau glacée</a>
+      <a href="location.html" data-nav="location">Location</a>
+      <a href="index.html#service">Service</a>
+      <a href="index.html#gammes">Gammes</a>
+      <a href="index.html#devis">Devis</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="menu__infos">
+      <p>Urgence France<br><a href="tel:+33384689650">+33 3 84 68 96 50</a></p>
+      <p>Urgence Suisse<br><a href="tel:+41566119062">+41 56 611 90 62</a></p>
+      <p><a href="mailto:info@nelisfrance.fr">info@nelisfrance.fr</a></p>
+      <p><span data-ouvert-court>Magasin de Vesoul</span></p>
+    </div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cristal" viewBox="0 0 24 24"><path d="M12 1.5v21M2.9 6.75l18.2 10.5M2.9 17.25l18.2-10.5M12 5.5 9.6 3.1M12 5.5l2.4-2.4M12 18.5l-2.4 2.4M12 18.5l2.4 2.4M6.4 8.8 3.2 9.6M6.4 8.8l-.8-3.2M17.6 15.2l3.2-.8M17.6 15.2l.8 3.2M6.4 15.2l-3.2-.8M6.4 15.2l-.8 3.2M17.6 8.8l3.2.8M17.6 8.8l.8-3.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</svg>
+
+<main id="contenu">
+
+  <section class="hero" id="haut" data-hero>
+    <div class="hero__fond">
+      <figure class="media" data-img="cf-chiller-2" data-kind="produit" data-schema="groupe" data-sizes="100vw" data-parallax="0.18" data-pos="62% 60%" data-pos-mobile="70% 60%"></figure>
+      <div class="hero__voile"></div>
+    </div>
+    <canvas class="hero__givre" data-givre aria-hidden="true"></canvas>
+    <div class="hero__givre-css" aria-hidden="true"></div>
+    <div class="cadre hero__cadre">
+      <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Froid industriel et climatisation · Vesoul</p>
+      <h1 class="hero__titre display" data-givre-cible data-split-hero>Le froid industriel, jusqu’à −40&nbsp;°C.</h1>
+      <div class="hero__bas">
+        <p class="hero__intro" data-apparait>Vente, location et service de groupes d’eau glacée, de pompes à chaleur et de climatisation. Nos experts conçoivent votre installation sur mesure, l’installent et l’entretiennent. En cas d’urgence, nous sommes à vos côtés le jour même.</p>
+        <div class="hero__actions" data-apparait>
+          <a class="btn btn--glace" href="#devis" data-magnetic><span>Demander un devis</span></a>
+          <a class="btn btn--ligne" href="tel:+33384689650"><span><span class="pastille pastille--chaud" aria-hidden="true"></span>Urgence 03 84 68 96 50</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="cadre hero__pied mono">
+      <span>Les pros du froid pour un froid pro</span>
+      <span class="hero__defiler">Faites défiler pour refroidir<i aria-hidden="true"></i></span>
+      <span>Vesoul · Villmergen</span>
+    </div>
+  </section>
+
+  <div class="bandeau" aria-hidden="true">
+    <div class="bandeau__piste" data-bandeau>
+      <span>Vente</span><svg><use href="#cristal"/></svg>
+      <span class="creux">Location</span><svg><use href="#cristal"/></svg>
+      <span>Service</span><svg><use href="#cristal"/></svg>
+      <span class="creux">Groupes d’eau glacée</span><svg><use href="#cristal"/></svg>
+      <span>Pompes à chaleur</span><svg><use href="#cristal"/></svg>
+      <span class="creux">Systèmes split</span><svg><use href="#cristal"/></svg>
+      <span>Jusqu’à −40 °C</span><svg><use href="#cristal"/></svg>
+    </div>
+  </div>
+
+  <section class="cle section" id="cle-en-main" aria-labelledby="cle-titre">
+    <div class="cadre cle__grille">
+      <div class="cle__texte">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Clé en main</p>
+        <h2 class="titre-2 display" id="cle-titre" data-split>Nous calculons, fournissons, installons et entretenons.</h2>
+        <p class="lead" data-degivre>Pour nous, le froid industriel ne se limite pas à louer, vendre et entretenir des équipements. Nos experts calculent et conçoivent pour vous un concept de refroidissement sur mesure.</p>
+        <p data-apparait>Nous fournissons des installations de climatisation et de réfrigération modernes et entièrement connectées, et nous les installons sur votre site avec l’ensemble des composants nécessaires. La maintenance et le service sont inclus. Nous réalisons votre projet dans les plus brefs délais.</p>
+      </div>
+      <figure class="media media--portrait" data-img="g-macro-givre-acier" data-kind="ambiance" data-parallax="0.08"></figure>
+    </div>
+    <div class="cadre">
+      <div class="etapes-bloc" data-etapes>
+        <svg class="etapes__conduite" preserveAspectRatio="none" viewBox="0 0 1000 12" aria-hidden="true">
+          <path d="M0 6H1000" stroke="var(--ligne-2)" stroke-width="2" vector-effect="non-scaling-stroke"/>
+          <path d="M0 6H1000" stroke="var(--glace)" stroke-width="3" vector-effect="non-scaling-stroke" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" data-conduite-etapes/>
+        </svg>
+        <ol class="etapes">
+          <li class="etape"><span class="etape__num mono">01</span><h3>Calculer et concevoir</h3><p>Analyse de votre besoin et dimensionnement hydraulique d’un concept de refroidissement sur mesure.</p></li>
+          <li class="etape"><span class="etape__num mono">02</span><h3>Fournir</h3><p>Équipements CF Chiller et AUX tenus en stock, contrôlés avant de quitter l’usine.</p></li>
+          <li class="etape"><span class="etape__num mono">03</span><h3>Installer</h3><p>Mise en place sur votre site avec tous les composants nécessaires, jusqu’à la mise en service.</p></li>
+          <li class="etape"><span class="etape__num mono">04</span><h3>Entretenir</h3><p>Maintenance, télémaintenance et présence le jour même en cas d’urgence.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="metiers section" id="service" aria-labelledby="metiers-titre">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Nos prestations</p>
+        <h2 class="titre-2 display" id="metiers-titre" data-split>Vente, location, service.</h2>
+        <p class="entete__txt" data-apparait>Un seul interlocuteur, de la planification à la maintenance de votre installation frigorifique.</p>
+      </div>
+      <div class="metiers__grille">
+        <article class="metier" data-tilt data-apparait>
+          <figure class="media media--carte" data-img="cf-chiller-1" data-kind="produit" data-schema="groupe" data-buee data-sizes="(max-width: 980px) 100vw, 33vw" data-pos="45% 60%"></figure>
+          <div class="metier__corps">
+            <p class="metier__tag mono">Vente</p>
+            <h3 class="titre-3">De la grande centrale d’eau glacée à la solution mobile.</h3>
+            <p>Groupes d’eau glacée et pompes à chaleur CF Chiller, climatiseurs AUX. Un grand stock pour éviter les délais d’attente.</p>
+            <details class="detail">
+              <summary>Ce que nous vendons</summary>
+              <ul>
+                <li>Groupes d’eau glacée CF Chiller, presque toutes configurations et fluides</li>
+                <li>Pompes à chaleur air-eau, eau-eau et sur mesure, de 6 à 420 kW</li>
+                <li>Systèmes split AUX : mono-split, multi-split, VRF, de 2,05 à 15 kW par appareil</li>
+                <li>Pièces de rechange, le plus souvent sous un jour ouvrable</li>
+              </ul>
+            </details>
+            <a class="lien-fleche" href="groupes-eau-glacee.html">Groupes d’eau glacée</a>
+          </div>
+        </article>
+        <article class="metier" data-tilt data-apparait>
+          <figure class="media media--carte" data-img="g-location-raccords" data-kind="ambiance" data-buee></figure>
+          <div class="metier__corps">
+            <p class="metier__tag mono">Location</p>
+            <h3 class="titre-3">Du froid de qualité, petite ou grande installation.</h3>
+            <p>Groupes d’eau glacée mobiles CF Chiller et climatiseurs professionnels, livrés et installés le jour même si nécessaire.</p>
+            <details class="detail">
+              <summary>Ce que nous louons</summary>
+              <ul>
+                <li>Groupes d’eau glacée mobiles, pilotés à distance</li>
+                <li>Climatiseurs mobiles de 3,5 à 7 kW</li>
+                <li>Grands systèmes raccordés à des groupes d’eau glacée, de 15 à 150 kW par unité</li>
+                <li>Climatiseurs fixes pour installation permanente</li>
+              </ul>
+            </details>
+            <a class="lien-fleche" href="location.html">Location</a>
+          </div>
+        </article>
+        <article class="metier" data-tilt data-apparait>
+          <figure class="media media--carte" data-img="g-service-manometres" data-kind="ambiance" data-buee></figure>
+          <div class="metier__corps">
+            <p class="metier__tag mono">Service</p>
+            <h3 class="titre-3">Des frigoristes certifiés, toutes marques.</h3>
+            <p>Nous entretenons nos équipements CF Chiller et AUX, mais aussi ceux des autres marques. À chaque intervention, nous vérifions toute l’installation pour prévenir les pannes.</p>
+            <details class="detail">
+              <summary>Nos prestations de service</summary>
+              <ul>
+                <li>Entretien, maintenance et réparation de groupes d’eau glacée, groupes frigorifiques et refroidisseurs d’eau glycolée</li>
+                <li>Maintenance de climatisations, centrales frigorifiques, pompes à chaleur, split, VRF, installations de séchage et chambres froides négatives</li>
+                <li>Modification et adaptation de réseaux et d’installations existants</li>
+                <li>Compresseurs, armoires électriques, programmation des régulations</li>
+                <li>Dimensionnement et équilibrage hydraulique des réseaux de froid</li>
+                <li>Basse température et refroidissement en cascade</li>
+                <li>Contrôle annuel d’étanchéité, à des conditions avantageuses</li>
+              </ul>
+            </details>
+            <a class="lien-fleche" href="#devis" data-preselection="service">Demander une intervention</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="colonne" id="puissances" data-colonne aria-labelledby="colonne-titre">
+    <div class="colonne__epingle">
+      <div class="cadre colonne__grille">
+        <div class="colonne__jauge" aria-hidden="true">
+          <div class="tube"><div class="tube__niveau" data-niveau></div><div class="tube__givre"></div></div>
+          <ul class="tube__echelle mono" data-echelle></ul>
+          <p class="colonne__lecture"><span data-lecture>2,05</span><small data-unite>kW</small></p>
+        </div>
+        <div>
+          <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>De 2 kW à 420 kW</p>
+          <h2 class="titre-2 display" id="colonne-titre" data-split>Une puissance pour chaque besoin.</h2>
+          <ol class="paliers" data-paliers>
+            <li class="palier is-actif" data-kw="2.05" data-lecture-txt="2,05–15">
+              <figure class="media media--portrait" data-img="aux-split-gamme" data-kind="produit" data-schema="split" data-sizes="(max-width: 1023px) 100vw, 30vw" data-pos="40% 50%"></figure>
+              <div class="palier__txt">
+                <p class="palier__val mono">2,05 à 15 kW par appareil</p>
+                <h3>Systèmes split AUX</h3>
+                <p>Mono-split, multi-split ou VRF, unité murale, cassette de plafond, plafond-sol ou gainable : pour un petit bureau, un open space, une salle informatique, des combles ou une cave à vin.</p>
+              </div>
+            </li>
+            <li class="palier" data-kw="7" data-lecture-txt="3,5–7">
+              <figure class="media media--portrait" data-img="g-palier-climatisation-salon" data-kind="ambiance"></figure>
+              <div class="palier__txt">
+                <p class="palier__val mono">3,5 à 7 kW · en location</p>
+                <h3>Climatiseurs mobiles</h3>
+                <p>Avec gaine d’évacuation (3,5 kW), sans gaine avec raccordement par tuyau d’eau (4 à 6,7 kW) ou avec gaine d’air froid (7 kW). Installés et déplacés simplement, sans compétences techniques.</p>
+              </div>
+            </li>
+            <li class="palier" data-kw="150" data-lecture-txt="15–150">
+              <figure class="media media--portrait" data-img="cf-chiller-1" data-kind="produit" data-schema="groupe" data-sizes="(max-width: 1023px) 100vw, 30vw" data-pos="38% 55%"></figure>
+              <div class="palier__txt">
+                <p class="palier__val mono">15 à 150 kW par unité · en location</p>
+                <h3>Grands systèmes de climatisation</h3>
+                <p>Raccordés à nos groupes d’eau glacée, ils climatisent bureaux, salles serveurs, foires et salons, halles et entrepôts.</p>
+              </div>
+            </li>
+            <li class="palier" data-kw="420" data-lecture-txt="6–420">
+              <figure class="media media--portrait" data-img="pac-air-eau" data-kind="produit" data-schema="pac"></figure>
+              <div class="palier__txt">
+                <p class="palier__val mono">6 à 420 kW · CF Chiller</p>
+                <h3>Pompes à chaleur</h3>
+                <p>Air-eau de 8 à 420 kW, eau-eau de 6 à 400 kW, solutions sur mesure de 6 à 420 kW. Nous ne savons pas seulement faire du froid.</p>
+              </div>
+            </li>
+            <li class="palier" data-kw="420" data-temp="-40" data-lecture-txt="−40">
+              <figure class="media media--portrait" data-img="g-texture-glace-noire" data-kind="ambiance"></figure>
+              <div class="palier__txt">
+                <p class="palier__val mono">Jusqu’à −40 °C · CF Chiller</p>
+                <h3>Groupes d’eau glacée</h3>
+                <p>Notre spécialité : le refroidissement de processus industriels, y compris les installations à basse température et le refroidissement en cascade.</p>
+                <a class="lien-fleche" href="groupes-eau-glacee.html">Découvrir les groupes d’eau glacée</a>
+              </div>
+            </li>
+          </ol>
+          <div class="colonne__puces" aria-hidden="true" data-puces><span class="is-actif"></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apps" id="applications" data-apps aria-labelledby="apps-titre">
+    <div class="apps__epingle">
+      <div class="cadre apps__entete">
+        <div>
+          <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Applications</p>
+          <h2 class="titre-2 display" id="apps-titre" data-split>Du laser à la cave à vin.</h2>
+        </div>
+        <p data-apparait>Nos groupes d’eau glacée refroidissent vos procédés comme vos bâtiments. Faites défiler : le froid passe sur chaque application.</p>
+      </div>
+      <div class="apps__piste" data-apps-piste>
+        <article class="app"><figure class="media" data-img="g-app-plasturgie" data-kind="ambiance"></figure><h3>Plasturgie et presses à injecter</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-laser" data-kind="ambiance"></figure><h3>Refroidissement de laser</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-vin" data-kind="ambiance"></figure><h3>Vinification et fermentation</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-serveurs" data-kind="ambiance"></figure><h3>Salles serveurs et informatique</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-agroalimentaire" data-kind="ambiance"></figure><h3>Produits alimentaires et boissons</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-lait" data-kind="ambiance"></figure><h3>Refroidissement du lait</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-imprimerie" data-kind="ambiance"></figure><h3>Imprimeries</h3></article>
+        <article class="app"><figure class="media" data-img="g-app-robots" data-kind="ambiance"></figure><h3>Robots et machines</h3></article>
+        <article class="app app--liste">
+          <h3>Et bien plus encore</h3>
+          <ul class="chips">
+            <li>Refroidissement de production</li><li>Polymères</li><li>Électroérosion</li><li>Moteurs</li><li>Froid de procédé</li><li>Essais et expérimentation</li><li>Cuves et réservoirs</li><li>Biogaz</li><li>Lignes de peinture</li><li>Galvanoplastie</li><li>Fabrication de boissons</li><li>Fermentation</li><li>Bureaux</li><li>Foires et salons</li><li>Halles et entrepôts</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tele section" id="telemaintenance" aria-labelledby="tele-titre">
+    <figure class="media media--fond" data-img="g-salle-controle" data-kind="ambiance" aria-hidden="true"></figure>
+    <div class="cadre tele__grille">
+      <div class="tele__texte">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Télémaintenance 24/7</p>
+        <h2 class="titre-2 display" id="tele-titre" data-split>Votre froid, surveillé jour et nuit.</h2>
+        <p data-apparait>La plupart de nos équipements, à la vente comme à la location, sont dotés d’un système de télémaintenance web développé par nos soins. Nous surveillons votre refroidissement 24 h/24 et 7 j/7, prêts à intervenir en quelques minutes.</p>
+        <ul class="liste-check" data-apparait>
+          <li>Un centre de contrôle moderne pour la télémaintenance</li>
+          <li>Tout le parc de location programmé et piloté à distance, sans technicien sur site</li>
+          <li>Service web à distance depuis un PC ou un smartphone, en option sur les pompes à chaleur</li>
+        </ul>
+      </div>
+      <div class="ecran" data-ecran role="img" aria-label="Exemple illustratif d’écran de supervision : températures de départ et de retour, charge et état de l’installation">
+        <div class="ecran__barre mono"><span><span class="pastille pastille--ok" aria-hidden="true"></span>Supervision · Groupe 01</span><span class="badge">Données illustratives</span></div>
+        <div class="ecran__grille">
+          <div class="ecran__kpi"><span class="mono">Départ eau glacée</span><strong><span data-kpi="depart">7,0</span><small>°C</small></strong></div>
+          <div class="ecran__kpi"><span class="mono">Retour</span><strong><span data-kpi="retour">12,1</span><small>°C</small></strong></div>
+          <div class="ecran__kpi"><span class="mono">Charge</span><strong><span data-kpi="charge">64</span><small>%</small></strong></div>
+          <div class="ecran__kpi"><span class="mono">État</span><span class="etat"><span class="pastille pastille--ok" aria-hidden="true"></span>En marche</span></div>
+          <div class="ecran__courbe">
+            <div class="ecran__legende mono"><span><i style="background:var(--glace)"></i>Départ</span><span><i style="background:var(--violet)"></i>Retour</span><span>Dernières 24 h</span></div>
+            <svg viewBox="0 0 600 150" data-courbe aria-hidden="true">
+              <g stroke="var(--ligne)" stroke-width="1"><path d="M0 25H600M0 75H600M0 125H600"/></g>
+              <path data-aire fill="url(#aire-depart)" d=""/>
+              <path data-ligne-retour fill="none" stroke="var(--violet)" stroke-width="1.6" d=""/>
+              <path data-ligne-depart fill="none" stroke="var(--glace)" stroke-width="2" d=""/>
+              <circle data-point r="4" fill="var(--glace)"/>
+              <defs><linearGradient id="aire-depart" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="rgba(196,233,255,.25)"/><stop offset="1" stop-color="rgba(196,233,255,0)"/></linearGradient></defs>
+            </svg>
+          </div>
+          <ol class="ecran__journal mono" data-journal aria-hidden="true"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="preuves section section--givre" id="preuves" aria-labelledby="preuves-titre">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Pourquoi NELIS</p>
+        <h2 class="titre-2 display" id="preuves-titre" data-split>La réactivité d’un stock, la rigueur d’un bureau d’études.</h2>
+      </div>
+      <div class="preuves__grille-ext">
+        <div class="preuves__visuel">
+          <figure class="media media--portrait" data-img="g-stock-pieces" data-kind="ambiance" data-parallax="0.06"></figure>
+        </div>
+        <div>
+          <div class="preuves__grille">
+            <div class="preuve" data-apparait><strong class="preuve__chiffre"><span data-compte="41">41</span><sup>*</sup></strong><p>ans d’expérience dans la location, la vente et le service de systèmes de refroidissement industriels.</p></div>
+            <div class="preuve" data-apparait><strong class="preuve__chiffre">Milliers</strong><p>d’applications d’eau glacée analysées, dimensionnées et installées sur le plan hydraulique.</p></div>
+            <div class="preuve" data-apparait><strong class="preuve__chiffre"><span data-compte="1">1</span> jour</strong><p>ouvrable : le délai le plus courant pour recevoir une pièce de rechange, grâce à notre stock.</p></div>
+            <div class="preuve" data-apparait><strong class="preuve__chiffre">Jour même</strong><p>livraison d’un équipement de froid de location en cas d’urgence.</p></div>
+            <div class="preuve" data-apparait><strong class="preuve__chiffre"><span data-compte="24">24</span>/7</strong><p>surveillance de votre refroidissement par télémaintenance.</p></div>
+            <div class="preuve" data-apparait><strong class="preuve__chiffre">Essai</strong><p>de fonctionnement en usine avant chaque livraison, auquel vous pouvez assister.</p></div>
+          </div>
+          <div class="references">
+            <p class="mono">Références clients</p>
+            <p class="a-completer">logos clients, témoignages et études de cas</p>
+          </div>
+          <p class="note" style="margin-top:1.4rem">* Chiffre repris du site actuel. À préciser : ancienneté du groupe NELIS ou de NELIS France SAS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gammes section" id="gammes" aria-labelledby="gammes-titre">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Nos gammes</p>
+        <h2 class="titre-2 display" id="gammes-titre" data-split>CF Chiller et AUX, en stock.</h2>
+        <p class="entete__txt" data-apparait>Nos composants frigorifiques se distinguent par leur longévité et leur robustesse. Chacun est contrôlé avant de quitter l’usine.</p>
+      </div>
+      <div class="gammes__grille">
+        <article class="gamme" data-tilt data-apparait>
+          <figure class="media" data-img="cf-chiller-2" data-kind="produit" data-schema="groupe" data-sizes="(max-width: 980px) 100vw, 33vw" data-pos="58% 62%"></figure>
+          <div class="gamme__corps">
+            <p class="mono">CF Chiller</p>
+            <h3 class="titre-3">Groupes d’eau glacée</h3>
+            <p>Presque toutes les configurations et tous les fluides frigorigènes, jusqu’à −40 °C, dimensionnés sur mesure sans surcoût.</p>
+            <a class="lien-fleche" href="groupes-eau-glacee.html">Découvrir la gamme</a>
+          </div>
+        </article>
+        <article class="gamme" data-tilt data-apparait>
+          <figure class="media" data-img="pac-sur-mesure" data-kind="produit" data-schema="pac"></figure>
+          <div class="gamme__corps">
+            <p class="mono">CF Chiller</p>
+            <h3 class="titre-3">Pompes à chaleur</h3>
+            <dl class="specs">
+              <div><dt>Air-eau</dt><dd>8 – 420 kW</dd></div>
+              <div><dt>Eau-eau</dt><dd>6 – 400 kW</dd></div>
+              <div><dt>Sur mesure</dt><dd>6 – 420 kW</dd></div>
+            </dl>
+            <p>Compresseur Scroll, échangeur à plaques, indice de protection IP54, prééquipement RS485, prêtes à raccorder.</p>
+          </div>
+        </article>
+        <article class="gamme" data-tilt data-apparait>
+          <figure class="media" data-img="aux-split-gamme" data-kind="produit" data-schema="split" data-sizes="(max-width: 980px) 100vw, 33vw"></figure>
+          <div class="gamme__corps">
+            <p class="mono">AUX</p>
+            <h3 class="titre-3">Systèmes split</h3>
+            <dl class="specs">
+              <div><dt>Par appareil</dt><dd>2,05 – 15 kW</dd></div>
+              <div><dt>Systèmes</dt><dd>Mono, multi, VRF</dd></div>
+            </dl>
+            <p>Unité murale, cassette de plafond, plafond-sol ou gainable. Confiez l’installation à un professionnel.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="telechargements">
+        <div class="telechargements__entete">
+          <h3 class="titre-3">Catalogues à télécharger</h3>
+          <p class="mono discret">PDF hébergés sur nelisfrance.fr</p>
+        </div>
+        <ul class="docs">
+          <li><a class="doc" href="https://www.nelisfrance.fr/_files/ugd/46e245_9b20c4a9bbce40fca57ae498ec92b669.pdf" target="_blank" rel="noopener"><span class="doc__couv"><span class="doc__type mono">PDF</span><span class="doc__marque">AUX<br>2024/2025</span></span><span class="doc__titre">Catalogue AUX 2024/2025</span><span class="doc__meta mono">Climatiseurs AUX</span></a></li>
+          <li><a class="doc" href="https://www.nelisfrance.fr/_files/ugd/531970_a785a76d6b4f47059d95bac87e35655f.pdf" target="_blank" rel="noopener"><span class="doc__couv doc__couv--img" data-couv="couv-daikin-sensira"><span class="doc__type mono">PDF</span></span><span class="doc__titre">Daikin Sensira FTXF-E et RXF-E</span><span class="doc__meta mono">Pompe à chaleur air-air murale</span></a></li>
+          <li><a class="doc" href="https://www.nelisfrance.fr/_files/ugd/531970_0bf32125629143fa9c92c60693f1ee57.pdf" target="_blank" rel="noopener"><span class="doc__couv"><span class="doc__type mono">PDF</span><span class="doc__marque">Daikin</span></span><span class="doc__titre">Climatiseurs Daikin</span><span class="doc__meta mono">Gamme</span></a></li>
+          <li><a class="doc" href="https://www.nelisfrance.fr/_files/ugd/531970_69c5f584235b4b2a90f8f95f62c6c494.pdf" target="_blank" rel="noopener"><span class="doc__couv"><span class="doc__type mono">PDF</span><span class="doc__marque">Mitsubishi<br>HR50</span></span><span class="doc__titre">Mitsubishi MSZ-HR50VF et MUZ-HR50VF</span><span class="doc__meta mono">Mural essentiel</span></a></li>
+          <li><a class="doc" href="https://www.nelisfrance.fr/_files/ugd/531970_738746e584344c75a6b903b81460877a.pdf" target="_blank" rel="noopener"><span class="doc__couv doc__couv--img" data-couv="couv-mitsubishi-hr35"><span class="doc__type mono">PDF</span></span><span class="doc__titre">Mitsubishi MSZ-HR35VF et MUZ-HR35VF</span><span class="doc__meta mono">Mural essentiel</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="carte section" id="contact" aria-labelledby="carte-titre">
+    <div class="cadre carte__grille">
+      <div>
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Nous trouver</p>
+        <h2 class="titre-2 display" id="carte-titre" data-split>Vesoul et Villmergen.</h2>
+        <div class="sites">
+          <article class="site" data-apparait>
+            <h3>NELIS France SAS</h3>
+            <address>9 rue Robert Fontesse<br>70000 Vesoul, France</address>
+            <p class="site__tel"><a href="tel:+33384689650">+33 3 84 68 96 50</a></p>
+            <p><a href="mailto:info@nelisfrance.fr">info@nelisfrance.fr</a></p>
+            <div class="horaires">
+              <p class="horaires__etat"><span class="pastille pastille--off" data-ouvert-pastille aria-hidden="true"></span><span data-ouvert-long>Magasin de Vesoul, Espace de la Motte</span></p>
+              <dl data-horaires>
+                <dt data-jour="1">Lundi</dt><dd data-jour="1">14 h 00 – 18 h 00</dd>
+                <dt data-jour="2">Mardi au samedi</dt><dd data-jour="2">9 h 30 – 12 h 00 · 14 h 00 – 18 h 00</dd>
+                <dt data-jour="0">Dimanche</dt><dd data-jour="0">Fermé</dd>
+              </dl>
+              <p class="note">Horaires du magasin. Disponibilité de l’urgence en dehors de ces horaires : à préciser.</p>
+            </div>
+          </article>
+          <article class="site" data-apparait>
+            <h3>NELIS GmbH · Suisse</h3>
+            <address>Alte Bahnhofstrasse 27<br>5612 Villmergen, Suisse</address>
+            <p class="site__tel"><a href="tel:+41566119062">+41 56 611 90 62</a></p>
+          </article>
+        </div>
+      </div>
+      <div class="carte__visuel">
+        <canvas class="carte__canvas" data-carte role="img" aria-label="Carte de la France et de la Suisse situant Vesoul et Villmergen"></canvas>
+        <figure class="media" data-img="magasin-vesoul" data-kind="lieu" data-sizes="(max-width: 640px) 100vw, 30vw"></figure>
+        <p class="a-completer">zone d’intervention en France et en Suisse</p>
+      </div>
+    </div>
+  </section>
+
+<section class="devis section" id="devis" aria-labelledby="devis-titre">
+  <figure class="media media--fond" data-img="g-condensation-tuyau" data-kind="ambiance" aria-hidden="true"></figure>
+  <div class="cadre devis__grille">
+    <div class="devis__intro">
+      <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Demande de devis</p>
+      <h2 class="titre-2 display" id="devis-titre" data-split>Décrivez votre besoin, nous dimensionnons.</h2>
+      <p>Offre sans engagement, en quatre étapes. En cas d’urgence, appelez directement le <a href="tel:+33384689650">+33 3 84 68 96 50</a>.</p>
+      <div class="devis__suivi" aria-hidden="true">
+        <div class="conduite"><div class="conduite__tube"><div class="conduite__eau" data-conduite></div></div></div>
+        <ol class="devis__etapes mono" data-etapes-liste>
+          <li class="is-actif">Votre besoin</li>
+          <li>Votre installation</li>
+          <li>Site et délai</li>
+          <li>Coordonnées</li>
+        </ol>
+      </div>
+    </div>
+
+    <form class="formulaire" data-form data-mode="general" novalidate aria-describedby="devis-demo">
+      <span class="badge formulaire__demo" id="devis-demo">Démonstration · rien n’est envoyé</span>
+
+      <fieldset class="etape-form is-actif" data-etape="1">
+        <legend>Quel est votre besoin ?</legend>
+        <div class="choix" role="radiogroup">
+          <label><input type="radio" name="besoin" value="achat" id="devis-b-achat"><strong>Acheter un équipement</strong><span>Groupe d’eau glacée, pompe à chaleur, climatisation</span></label>
+          <label><input type="radio" name="besoin" value="location" id="devis-b-location"><strong>Louer du froid</strong><span>Panne, pic de chaleur, travaux, procédé</span></label>
+          <label><input type="radio" name="besoin" value="service" id="devis-b-service"><strong>Entretien ou réparation</strong><span>Nos équipements et ceux des autres marques</span></label>
+          <label><input type="radio" name="besoin" value="urgence" id="devis-b-urgence"><strong>Une urgence</strong><span>Installation à l’arrêt, besoin immédiat</span></label>
+        </div>
+        <p class="alerte" data-si-urgence hidden>Pour une urgence, le plus rapide est d’appeler : <strong>+33 3 84 68 96 50</strong> en France, <strong>+41 56 611 90 62</strong> en Suisse. Vous pouvez aussi continuer ce formulaire.</p>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="2">
+        <legend>Votre installation</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="devis-equip">Équipement</label>
+            <select id="devis-equip" name="equipement">
+              <option value="groupe">Groupe d’eau glacée</option>
+              <option value="pac">Pompe à chaleur</option>
+              <option value="split">Climatisation split ou VRF</option>
+              <option value="mobile">Climatiseur mobile</option>
+              <option value="inconnu">Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="devis-app">Application</label>
+            <select id="devis-app" name="application">
+              <option value="process">Froid industriel ou de procédé</option>
+              <option value="plasturgie">Plasturgie, presses à injecter</option>
+              <option value="laser">Laser, électroérosion, machines</option>
+              <option value="agro">Produits alimentaires, boissons, lait</option>
+              <option value="vin">Vinification, fermentation</option>
+              <option value="it">Salle serveurs, informatique</option>
+              <option value="bureaux">Bureaux, commerces</option>
+              <option value="salons">Foires et salons</option>
+              <option value="halles">Halles et entrepôts</option>
+              <option value="autre">Autre application</option>
+            </select>
+          </div>
+        </div>
+        <div class="champ">
+          <label for="devis-kw">Puissance frigorifique estimée <output class="valeur" for="devis-kw" data-sortie-kw>30 kW</output></label>
+          <input type="range" id="devis-kw" name="puissance" min="0" max="100" step="1" value="55" data-kw>
+          <label class="case-seule" for="devis-kw-inconnu"><input type="checkbox" id="devis-kw-inconnu" name="puissance_inconnue" data-kw-inconnu> Je ne connais pas la puissance</label>
+        </div>
+        <div class="champ">
+          <label for="devis-temp">Température de départ souhaitée <output class="valeur" for="devis-temp" data-sortie-temp>+7 °C</output></label>
+          <input type="range" id="devis-temp" name="temperature" min="-40" max="20" step="1" value="7" data-temp>
+        </div>
+        <div class="orientation" aria-live="polite">
+          <p class="mono">Orientation indicative</p>
+          <p data-orientation><strong>Groupe d’eau glacée CF Chiller</strong>, dimensionné sur mesure.</p>
+          <small>Calcul simplifié à partir des puissances publiées par NELIS. Nos experts confirment le dimensionnement.</small>
+        </div>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="3">
+        <legend>Votre site et votre délai</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="devis-cp">Code postal du site</label>
+            <input type="text" id="devis-cp" name="code_postal" inputmode="numeric" autocomplete="postal-code" placeholder="70000">
+          </div>
+          <div class="champ">
+            <label for="devis-date">Date souhaitée</label>
+            <input type="date" id="devis-date" name="date">
+          </div>
+        </div>
+        <div class="champ" data-si-location>
+          <label for="devis-duree">Durée de location <output class="valeur" for="devis-duree" data-sortie-duree>4 semaines</output></label>
+          <input type="range" id="devis-duree" name="duree" min="1" max="52" step="1" value="4" data-duree>
+        </div>
+        <div class="champ">
+          <span class="label" id="devis-racc-l">Sur place</span>
+          <div class="cases" role="group" aria-labelledby="devis-racc-l">
+            <label><input type="checkbox" name="sur_place" value="Réseau d’eau glacée existant" id="devis-r1"> Réseau d’eau glacée existant</label>
+            <label><input type="checkbox" name="sur_place" value="Raccords à brides" id="devis-r2"> Raccords à brides</label>
+            <label><input type="checkbox" name="sur_place" value="Couplage rapide" id="devis-r3"> Couplage rapide</label>
+            <label><input type="checkbox" name="sur_place" value="Installation d’une autre marque" id="devis-r4"> Installation d’une autre marque</label>
+          </div>
+        </div>
+        <div class="champ">
+          <label for="devis-msg">Votre message</label>
+          <textarea id="devis-msg" name="message" placeholder="Process, contraintes du site, accès, horaires…"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="4">
+        <legend>Vos coordonnées</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="devis-civ">Civilité</label>
+            <select id="devis-civ" name="civilite"><option value="">Veuillez choisir</option><option>Madame</option><option>Monsieur</option></select>
+          </div>
+          <div class="champ" data-requis>
+            <label for="devis-ent">Entreprise</label>
+            <input type="text" id="devis-ent" name="entreprise" autocomplete="organization" required>
+          </div>
+          <div class="champ" data-requis>
+            <label for="devis-nom">Nom</label>
+            <input type="text" id="devis-nom" name="nom" autocomplete="family-name" required>
+          </div>
+          <div class="champ">
+            <label for="devis-prenom">Prénom</label>
+            <input type="text" id="devis-prenom" name="prenom" autocomplete="given-name">
+          </div>
+          <div class="champ" data-requis>
+            <label for="devis-mail">Adresse e-mail</label>
+            <input type="email" id="devis-mail" name="email" autocomplete="email" required>
+          </div>
+          <div class="champ">
+            <label for="devis-tel">Téléphone</label>
+            <input type="tel" id="devis-tel" name="telephone" autocomplete="tel">
+          </div>
+        </div>
+        <label class="consentement" for="devis-rgpd"><input type="checkbox" id="devis-rgpd" name="consentement" required> <span>J’accepte que NELIS France utilise ces informations pour répondre à ma demande, selon la <a href="mentions-legales.html#donnees">politique de confidentialité</a>.</span></label>
+        <p class="erreur" data-erreur hidden></p>
+      </fieldset>
+
+      <div class="formulaire__resultat" data-resultat hidden tabindex="-1">
+        <p class="mono ok-texte">Demande prête</p>
+        <h3>Merci, votre demande est complète.</h3>
+        <p class="discret">Ceci est une démonstration : aucune donnée n’a été envoyée. Sur le site final, NELIS France vous recontacte dans les plus brefs délais.</p>
+        <dl class="recap" data-recap></dl>
+        <div><button type="button" class="btn btn--ligne" data-recommencer><span>Faire une autre demande</span></button></div>
+      </div>
+
+      <div class="formulaire__nav" data-nav-form>
+        <button type="button" class="btn btn--ligne" data-prec hidden><span>Retour</span></button>
+        <span class="formulaire__compteur mono" data-compteur>Étape 1 sur 4</span>
+        <button type="button" class="btn btn--glace" data-suiv><span>Continuer</span></button>
+        <button type="submit" class="btn btn--glace" data-envoyer hidden><span>Préparer ma demande</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="pied">
+  <div class="pied__givre" aria-hidden="true">
+    <figure class="media" data-img="g-footer-givre" data-kind="ambiance" data-sans-etiquette></figure>
+  </div>
+  <div class="cadre pied__haut">
+    <p class="pied__slogan display">Les pros du froid<br><em>pour un froid pro.</em></p>
+    <a class="btn btn--glace" href="index.html#devis" data-magnetic><span>Demander un devis</span></a>
+  </div>
+  <div class="cadre pied__grille">
+    <div>
+      <h3>NELIS France SAS</h3>
+      <address>9 rue Robert Fontesse<br>70000 Vesoul, France</address>
+      <p class="site__tel"><a href="tel:+33384689650">+33 3 84 68 96 50</a></p>
+      <p><a href="mailto:info@nelisfrance.fr">info@nelisfrance.fr</a></p>
+    </div>
+    <div>
+      <h3>NELIS GmbH</h3>
+      <address>Alte Bahnhofstrasse 27<br>5612 Villmergen, Suisse</address>
+      <p class="site__tel"><a href="tel:+41566119062">+41 56 611 90 62</a></p>
+    </div>
+    <div>
+      <h3>Magasin de Vesoul</h3>
+      <dl>
+        <dt>Lundi</dt><dd>14 h 00 – 18 h 00</dd>
+        <dt>Mardi au samedi</dt><dd>9 h 30 – 12 h 00 · 14 h 00 – 18 h 00</dd>
+      </dl>
+      <p><span data-ouvert-court>Espace de la Motte, Vesoul</span></p>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="groupes-eau-glacee.html">Groupes d’eau glacée</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="index.html#service">Service et maintenance</a></li>
+        <li><a href="index.html#gammes">Gammes et catalogues</a></li>
+        <li><a href="https://www.instagram.com/nelis_france_sas/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61593073722053" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cadre pied__bas mono">
+    <span>© 2026 NELIS France SAS</span>
+    <span>Maquette de démonstration · contenus à valider</span>
+    <button type="button" data-calme aria-pressed="false">Réduire les animations</button>
+    <a href="mentions-legales.html">Mentions légales et données personnelles</a>
+  </div>
+</footer>
+
+<div class="thermo" aria-hidden="true" title="Thermomètre de lecture">
+  <div class="thermo__tube"><div class="thermo__niveau" data-thermo-niveau></div></div>
+  <span class="thermo__val" data-thermo-val>+24 °C</span>
+</div>
+
+<div class="curseur" aria-hidden="true">
+  <div class="curseur__anneau"></div>
+  <div class="curseur__point"></div>
+  <span class="curseur__label" data-curseur-label></span>
+</div>
+
+<script src="assets/js/vendor/gsap.min.js" defer></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/vendor/SplitText.min.js" defer></script>
+<script src="assets/js/vendor/lenis.min.js" defer></script>
+<script src="assets/js/vendor/ogl.min.js" defer></script>
+<script src="assets/js/images.js" defer></script>
+<script src="assets/js/media.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/frost.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>

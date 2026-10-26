@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Location de froid · NELIS France</title>
+<meta name="description" content="Location de groupes d’eau glacée mobiles CF Chiller et de climatiseurs professionnels : panne, urgence, pic de chaleur, travaux, procédés. Livraison et installation le jour même si nécessaire.">
+<meta name="theme-color" content="#05070d">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="NELIS France SAS">
+<meta property="og:title" content="Location de froid · NELIS France">
+<meta property="og:description" content="Location de groupes d’eau glacée mobiles CF Chiller et de climatiseurs professionnels : panne, urgence, pic de chaleur, travaux, procédés. Livraison et installation le jour même si nécessaire.">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/img/g-texture-givre-784.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){var d=document.documentElement;d.classList.remove('no-js');d.classList.add('js');var c=false;try{c=localStorage.getItem('nelis-calme')==='1'}catch(e){}if(c||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))d.classList.add('calme');try{if(sessionStorage.getItem('nelis-vu'))d.classList.add('intro-courte');sessionStorage.setItem('nelis-vu','1')}catch(e){}})();</script>
+</head>
+<body data-page="location">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<div class="gel" id="gel" aria-hidden="true">
+  <img class="gel__texture" src="assets/img/g-texture-givre-784.webp" alt="" width="784" height="1168">
+  <canvas class="gel__canvas"></canvas>
+  <div class="gel__marque">
+    <img class="gel__mono" src="assets/img/logo-monogramme-240.webp" alt="" width="120" height="120">
+    <span class="gel__temp mono" data-gel-temp>+24 °C</span>
+  </div>
+</div>
+
+<div class="urgence" role="region" aria-label="Contacts d’urgence">
+  <div class="cadre urgence__cadre">
+    <p class="urgence__titre"><span class="pastille pastille--chaud" aria-hidden="true"></span>Urgence<span class="urgence__titre-long">&nbsp;frigorifique</span></p>
+    <p class="urgence__numeros">
+      <span><span class="urgence__pays">France </span><a href="tel:+33384689650">+33 3 84 68 96 50</a></span>
+      <span class="urgence__ch">Suisse <a href="tel:+41566119062">+41 56 611 90 62</a></span>
+    </p>
+    <div class="urgence__droite">
+      <p class="urgence__statut"><span class="pastille pastille--off" data-ouvert-pastille aria-hidden="true"></span><span data-ouvert-court>Magasin de Vesoul</span></p>
+      <button class="urgence__calme" type="button" data-calme aria-pressed="false">Réduire les animations</button>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="cadre nav__cadre">
+    <a class="marque marque--img" href="index.html" aria-label="NELIS France SAS, accueil">
+      <img src="assets/img/logo-nelis-sombre-480.webp" srcset="assets/img/logo-nelis-sombre-480.webp 480w, assets/img/logo-nelis-sombre-960.webp 960w" sizes="110px" alt="NELIS France SAS" width="103" height="34">
+    </a>
+    <nav class="nav__liens" aria-label="Navigation principale">
+      <a href="groupes-eau-glacee.html" data-nav="eau">Groupes d’eau glacée</a>
+      <a href="location.html" data-nav="location" aria-current="page">Location</a>
+      <a href="index.html#service" data-nav="service">Service</a>
+      <a href="index.html#gammes" data-nav="gammes">Gammes</a>
+      <a href="index.html#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__son" type="button" aria-pressed="false" data-son aria-label="Activer le son d’ambiance">
+        <span class="son-ondes" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="nav__son-txt" data-son-txt>Son</span>
+      </button>
+      <a class="btn btn--glace btn--petit nav__devis" href="index.html#devis" data-magnetic><span>Demander un devis</span></a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" data-burger><i></i><i></i><span class="visuellement-cache">Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="cadre">
+    <nav class="menu__liens" aria-label="Menu">
+      <a href="index.html" data-nav="accueil">Accueil</a>
+      <a href="groupes-eau-glacee.html" data-nav="eau">Groupes d’eau glacée</a>
+      <a href="location.html" data-nav="location" aria-current="page">Location</a>
+      <a href="index.html#service">Service</a>
+      <a href="index.html#gammes">Gammes</a>
+      <a href="index.html#devis">Devis</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="menu__infos">
+      <p>Urgence France<br><a href="tel:+33384689650">+33 3 84 68 96 50</a></p>
+      <p>Urgence Suisse<br><a href="tel:+41566119062">+41 56 611 90 62</a></p>
+      <p><a href="mailto:info@nelisfrance.fr">info@nelisfrance.fr</a></p>
+      <p><span data-ouvert-court>Magasin de Vesoul</span></p>
+    </div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="chaleur" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.03" numOctaves="2" seed="3" result="bruit" data-chaleur-bruit/>
+    <feDisplacementMap in="SourceGraphic" in2="bruit" scale="0" xChannelSelector="R" yChannelSelector="G" data-chaleur-deplacement/>
+  </filter>
+</svg>
+
+<main id="contenu">
+
+  <section class="hero hero--page" data-hero data-hero-chaleur>
+    <div class="hero__fond">
+      <figure class="media" data-img="cf-chiller-1" data-img-mobile="g-location-hero-mobile" data-kind="produit" data-schema="groupe" data-tone="chaud" data-sizes="100vw" data-parallax="0.16" data-pos="40% 55%" data-pos-mobile="30% 55%"></figure>
+      <div class="hero__voile"></div>
+    </div>
+    <canvas class="hero__givre" data-givre aria-hidden="true"></canvas>
+    <div class="hero__givre-css" aria-hidden="true"></div>
+    <div class="cadre hero__cadre">
+      <p class="fil mono"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Location</span></p>
+      <h1 class="hero__titre display" data-givre-cible data-split-hero>Du froid de location, livré sur votre site.</h1>
+      <div class="hero__bas">
+        <p class="hero__intro" data-apparait>Groupes d’eau glacée mobiles CF Chiller et climatiseurs professionnels pour une panne, une urgence, un pic de chaleur ou vos procédés. Si nécessaire, nous livrons et installons vos équipements le jour même.</p>
+        <div class="hero__actions" data-apparait>
+          <a class="btn btn--glace" href="#configurateur" data-magnetic><span>Configurer ma location</span></a>
+          <a class="btn btn--ligne" href="tel:+33384689650"><span><span class="pastille pastille--chaud" aria-hidden="true"></span>Urgence 03 84 68 96 50</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="cadre hero__pied mono">
+      <span>Groupes mobiles CF Chiller</span>
+      <span class="hero__defiler">Faites défiler pour refroidir<i aria-hidden="true"></i></span>
+      <span>Livraison le jour même si nécessaire</span>
+    </div>
+  </section>
+
+  <section class="scenarios section" aria-labelledby="scen-titre">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Quel est votre cas ?</p>
+        <h2 class="titre-2 display" id="scen-titre" data-split>Une solution pour chaque situation.</h2>
+      </div>
+      <div class="scenarios__grille" data-scenarios>
+        <div class="onglets" role="tablist" aria-label="Situations">
+          <button class="onglet" role="tab" id="t-panne" aria-controls="p-scenario" aria-selected="true" data-scenario="panne"><span>Panne de climatisation</span><span class="mono">01</span></button>
+          <button class="onglet" role="tab" id="t-urgence" aria-controls="p-scenario" aria-selected="false" tabindex="-1" data-scenario="urgence"><span>Urgence</span><span class="mono">02</span></button>
+          <button class="onglet" role="tab" id="t-ete" aria-controls="p-scenario" aria-selected="false" tabindex="-1" data-scenario="ete"><span>Pic de charge en été</span><span class="mono">03</span></button>
+          <button class="onglet" role="tab" id="t-travaux" aria-controls="p-scenario" aria-selected="false" tabindex="-1" data-scenario="travaux"><span>Travaux sur votre réseau</span><span class="mono">04</span></button>
+          <button class="onglet" role="tab" id="t-process" aria-controls="p-scenario" aria-selected="false" tabindex="-1" data-scenario="process"><span>Froid de procédé</span><span class="mono">05</span></button>
+          <button class="onglet" role="tab" id="t-clim" aria-controls="p-scenario" aria-selected="false" tabindex="-1" data-scenario="clim"><span>Climatisation temporaire</span><span class="mono">06</span></button>
+        </div>
+        <div class="scenario" id="p-scenario" role="tabpanel" aria-labelledby="t-panne" tabindex="0">
+          <div class="scenario__media" data-scenario-media>
+            <figure class="media" data-img="g-scenario-panne" data-kind="ambiance" data-tone="chaud" data-scenario-fig="panne"></figure>
+            <figure class="media" data-img="g-scenario-urgence" data-kind="ambiance" data-scenario-fig="urgence" hidden></figure>
+            <figure class="media" data-img="g-scenario-canicule" data-kind="ambiance" data-tone="chaud" data-scenario-fig="ete" hidden></figure>
+            <figure class="media" data-img="g-scenario-travaux" data-kind="ambiance" data-scenario-fig="travaux" hidden></figure>
+            <figure class="media" data-img="g-app-plasturgie" data-kind="ambiance" data-scenario-fig="process" hidden></figure>
+            <figure class="media" data-img="g-palier-climatisation-salon" data-kind="ambiance" data-scenario-fig="clim" hidden></figure>
+          </div>
+          <div class="scenario__texte" data-scenario-texte>
+            <p class="mono" data-st-tag>Panne de climatisation</p>
+            <h3 class="titre-3" data-st-titre>Votre installation s’arrête, le froid continue.</h3>
+            <p data-st-txt>Nos groupes d’eau glacée de location s’adaptent à votre réseau de froid et fonctionnent avec une fiabilité absolue, le temps de réparer ou de remplacer votre équipement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="parc section" aria-labelledby="parc-titre">
+    <div class="cadre parc__grille">
+      <div>
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Notre parc de location</p>
+        <h2 class="titre-2 display" id="parc-titre" data-split>Du climatiseur mobile au groupe d’eau glacée.</h2>
+        <p class="discret" style="margin-top:1.4rem;max-width:52ch" data-apparait>Nos groupes d’eau glacée mobiles, aussi appelés groupes de production d’eau glacée, sont des équipements CF Chiller modernes, spécialement modifiés pour la location et dotés d’un équipement technique de pointe.</p>
+        <ul class="parc__liste" style="margin-top:2rem" data-parc>
+          <li class="equip"><h3>Climatiseur mobile avec gaine d’évacuation d’air</h3><span class="equip__kw">3,5 kW</span><span class="equip__jauge" data-de="3.5" data-a="3.5"><i></i></span></li>
+          <li class="equip"><h3>Climatiseur mobile sans gaine, raccordement par tuyau d’eau</h3><span class="equip__kw">4 – 6,7 kW</span><span class="equip__jauge" data-de="4" data-a="6.7"><i></i></span></li>
+          <li class="equip"><h3>Climatiseur avec gaine d’air froid</h3><span class="equip__kw">7 kW</span><span class="equip__jauge" data-de="7" data-a="7"><i></i></span></li>
+          <li class="equip"><h3>Grand système raccordé à un groupe d’eau glacée</h3><span class="equip__kw">15 – 150 kW / unité</span><span class="equip__jauge" data-de="15" data-a="150"><i></i></span></li>
+          <li class="equip"><h3>Climatiseur fixe pour installation permanente</h3><span class="equip__kw">Plusieurs classes</span><p>Puissances à préciser selon le projet.</p></li>
+        </ul>
+        <div class="parc__echelle mono" aria-hidden="true"><span>1 kW</span><span>10 kW</span><span>100 kW</span><span>500 kW</span></div>
+      </div>
+      <div class="parc__visuel">
+        <figure class="media" data-img="aux-split-gamme" data-kind="produit" data-schema="mobile" data-sizes="(max-width: 980px) 100vw, 45vw" data-parallax="0.06"></figure>
+        <p class="note">Climatiseurs mobiles et unités AUX. Les groupes d’eau glacée mobiles sont présentés plus bas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="techno section" aria-labelledby="techno-titre">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Technologie embarquée</p>
+        <h2 class="titre-2 display" id="techno-titre" data-split>Des groupes pensés pour la location.</h2>
+        <p class="entete__txt" data-apparait>En location, il est essentiel que le matériel s’adapte parfaitement à votre réseau de froid et fonctionne avec une fiabilité absolue.</p>
+      </div>
+      <div class="orbite" data-orbite>
+        <div class="orbite__anneau" aria-hidden="true"></div>
+        <div class="orbite__centre"><figure class="media" data-img="cf-chiller-2" data-kind="produit" data-schema="groupe" data-sizes="(max-width: 980px) 100vw, 40vw"></figure></div>
+        <article class="atout"><p class="mono">Pilotage</p><h3>Commande numérique à distance</h3><p>Tout le parc est programmé et piloté à distance, sans technicien sur site.</p></article>
+        <article class="atout"><p class="mono">Fiabilité</p><h3>By-pass automatiques</h3><p>Pour une fiabilité maximale de votre réseau de froid.</p></article>
+        <article class="atout"><p class="mono">Entretien</p><h3>Évaporateurs autonettoyants</h3><p>Des évaporateurs multitubulaires qui se nettoient eux-mêmes.</p></article>
+        <article class="atout"><p class="mono">Consommation</p><h3>Ventilateurs à vitesse variable</h3><p>Ils adaptent leur régime au besoin réel de froid.</p></article>
+        <article class="atout"><p class="mono">Voisinage</p><h3>Particulièrement silencieux</h3><p>Tous nos équipements de location sont conçus pour rester discrets.</p></article>
+        <article class="atout"><p class="mono">Logistique</p><h3>Poids optimisé</h3><p>Plus simples à livrer, à manutentionner et à installer.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stock section" aria-labelledby="stock-titre">
+    <div class="cadre stock__grille">
+      <figure class="media media--portrait" data-img="g-location-raccords" data-kind="ambiance" data-parallax="0.08"></figure>
+      <div>
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Stock paré à tout</p>
+        <h2 class="titre-2 display" id="stock-titre" data-split>Tout pour raccorder vite.</h2>
+        <p class="discret" style="margin-top:1.4rem;max-width:52ch" data-apparait>Notre stock couvre chaque raccordement pour brancher rapidement votre location sur l’installation existante.</p>
+        <ul class="raccords" data-raccords>
+          <li class="raccord"><span class="raccord__icone" aria-hidden="true"></span>Raccordements à brides</li>
+          <li class="raccord"><span class="raccord__icone" aria-hidden="true"></span>Systèmes de couplage rapide</li>
+          <li class="raccord"><span class="raccord__icone" aria-hidden="true"></span>Échangeurs de chaleur</li>
+          <li class="raccord"><span class="raccord__icone" aria-hidden="true"></span>Réservoirs</li>
+          <li class="raccord"><span class="raccord__icone" aria-hidden="true"></span>Modules de pompage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="apps-loc section" aria-labelledby="appsloc-titre" style="background:var(--nuit-2)">
+    <div class="cadre">
+      <div class="entete">
+        <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Applications du froid de location</p>
+        <h2 class="titre-2 display" id="appsloc-titre" data-split>Pour vos procédés et vos bâtiments.</h2>
+      </div>
+      <div class="apps-loc__grille">
+        <div>
+          <div class="filtres" role="group" aria-label="Filtrer les applications" data-filtres>
+            <button type="button" class="filtre" aria-pressed="true" data-filtre="tout">Toutes</button>
+            <button type="button" class="filtre" aria-pressed="false" data-filtre="industrie">Industrie et procédés</button>
+            <button type="button" class="filtre" aria-pressed="false" data-filtre="agro">Alimentaire et boissons</button>
+            <button type="button" class="filtre" aria-pressed="false" data-filtre="batiment">Bâtiment, IT et essais</button>
+          </div>
+          <ul class="liste-apps" data-liste-apps>
+            <li data-f="industrie">Refroidissement de production</li>
+            <li data-f="industrie">Refroidissement de laser</li>
+            <li data-f="industrie">Plasturgie et matières plastiques</li>
+            <li data-f="industrie">Polymères</li>
+            <li data-f="industrie">Machines</li>
+            <li data-f="industrie">Froid industriel et de procédé</li>
+            <li data-f="industrie">Robots</li>
+            <li data-f="industrie">Machines d’électroérosion</li>
+            <li data-f="industrie">Presses à injecter</li>
+            <li data-f="industrie">Moteurs</li>
+            <li data-f="industrie">Cuves, réservoirs et conteneurs</li>
+            <li data-f="industrie">Imprimeries</li>
+            <li data-f="industrie">Installations de biogaz</li>
+            <li data-f="industrie">Lignes de peinture</li>
+            <li data-f="industrie">Galvanoplastie</li>
+            <li data-f="agro">Refroidissement vinicole</li>
+            <li data-f="agro">Produits alimentaires</li>
+            <li data-f="agro">Fabrication de boissons</li>
+            <li data-f="agro">Fermentation</li>
+            <li data-f="agro">Refroidissement du lait</li>
+            <li data-f="batiment">Essais et expérimentation</li>
+            <li data-f="batiment">Salles serveurs</li>
+            <li data-f="batiment">Informatique et IT</li>
+            <li data-f="batiment">Bureaux</li>
+            <li data-f="batiment">Foires et salons</li>
+            <li data-f="batiment">Halles et entrepôts</li>
+          </ul>
+        </div>
+        <figure class="media" data-img="g-app-vin" data-kind="ambiance" data-parallax="0.06"></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="appel">
+    <div class="cadre appel__cadre">
+      <p class="appel__titre display">Besoin d’une aide rapide&nbsp;?</p>
+      <div class="appel__droite">
+        <p class="mono">Urgence France</p>
+        <a class="appel__tel" href="tel:+33384689650">03 84 68 96 50</a>
+        <p class="mono">Suisse +41 56 611 90 62</p>
+      </div>
+    </div>
+  </div>
+
+<section class="devis section" id="configurateur" aria-labelledby="configurateur-titre">
+  <figure class="media media--fond" data-img="g-location-hero" data-kind="ambiance" aria-hidden="true"></figure>
+  <div class="cadre devis__grille">
+    <div class="devis__intro">
+      <p class="surtitre mono"><span class="pastille" aria-hidden="true"></span>Configurateur de location</p>
+      <h2 class="titre-2 display" id="configurateur-titre" data-split>Votre location en quatre étapes.</h2>
+      <p>Puissance, température, durée et site : nous préparons une offre sans engagement. En cas d’urgence, appelez directement le <a href="tel:+33384689650">+33 3 84 68 96 50</a>.</p>
+      <div class="devis__suivi" aria-hidden="true">
+        <div class="conduite"><div class="conduite__tube"><div class="conduite__eau" data-conduite></div></div></div>
+        <ol class="devis__etapes mono" data-etapes-liste>
+          <li class="is-actif">Votre besoin</li>
+          <li>Votre installation</li>
+          <li>Site et délai</li>
+          <li>Coordonnées</li>
+        </ol>
+      </div>
+    </div>
+
+    <form class="formulaire" data-form data-mode="location" novalidate aria-describedby="configurateur-demo">
+      <span class="badge formulaire__demo" id="configurateur-demo">Démonstration · rien n’est envoyé</span>
+
+      <fieldset class="etape-form is-actif" data-etape="1">
+        <legend>Quel est votre besoin ?</legend>
+        <div class="choix" role="radiogroup">
+          <label><input type="radio" name="besoin" value="achat" id="configurateur-b-achat"><strong>Acheter un équipement</strong><span>Groupe d’eau glacée, pompe à chaleur, climatisation</span></label>
+          <label><input type="radio" name="besoin" value="location" id="configurateur-b-location" checked><strong>Louer du froid</strong><span>Panne, pic de chaleur, travaux, procédé</span></label>
+          <label><input type="radio" name="besoin" value="service" id="configurateur-b-service"><strong>Entretien ou réparation</strong><span>Nos équipements et ceux des autres marques</span></label>
+          <label><input type="radio" name="besoin" value="urgence" id="configurateur-b-urgence"><strong>Une urgence</strong><span>Installation à l’arrêt, besoin immédiat</span></label>
+        </div>
+        <p class="alerte" data-si-urgence hidden>Pour une urgence, le plus rapide est d’appeler : <strong>+33 3 84 68 96 50</strong> en France, <strong>+41 56 611 90 62</strong> en Suisse. Vous pouvez aussi continuer ce formulaire.</p>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="2">
+        <legend>Votre installation</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="configurateur-equip">Équipement</label>
+            <select id="configurateur-equip" name="equipement">
+              <option value="groupe">Groupe d’eau glacée</option>
+              <option value="pac">Pompe à chaleur</option>
+              <option value="split">Climatisation split ou VRF</option>
+              <option value="mobile">Climatiseur mobile</option>
+              <option value="inconnu">Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="configurateur-app">Application</label>
+            <select id="configurateur-app" name="application">
+              <option value="process">Froid industriel ou de procédé</option>
+              <option value="plasturgie">Plasturgie, presses à injecter</option>
+              <option value="laser">Laser, électroérosion, machines</option>
+              <option value="agro">Produits alimentaires, boissons, lait</option>
+              <option value="vin">Vinification, fermentation</option>
+              <option value="it">Salle serveurs, informatique</option>
+              <option value="bureaux">Bureaux, commerces</option>
+              <option value="salons">Foires et salons</option>
+              <option value="halles">Halles et entrepôts</option>
+              <option value="autre">Autre application</option>
+            </select>
+          </div>
+        </div>
+        <div class="champ">
+          <label for="configurateur-kw">Puissance frigorifique estimée <output class="valeur" for="configurateur-kw" data-sortie-kw>30 kW</output></label>
+          <input type="range" id="configurateur-kw" name="puissance" min="0" max="100" step="1" value="55" data-kw>
+          <label class="case-seule" for="configurateur-kw-inconnu"><input type="checkbox" id="configurateur-kw-inconnu" name="puissance_inconnue" data-kw-inconnu> Je ne connais pas la puissance</label>
+        </div>
+        <div class="champ">
+          <label for="configurateur-temp">Température de départ souhaitée <output class="valeur" for="configurateur-temp" data-sortie-temp>+7 °C</output></label>
+          <input type="range" id="configurateur-temp" name="temperature" min="-40" max="20" step="1" value="7" data-temp>
+        </div>
+        <div class="orientation" aria-live="polite">
+          <p class="mono">Orientation indicative</p>
+          <p data-orientation><strong>Groupe d’eau glacée CF Chiller</strong>, dimensionné sur mesure.</p>
+          <small>Calcul simplifié à partir des puissances publiées par NELIS. Nos experts confirment le dimensionnement.</small>
+        </div>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="3">
+        <legend>Votre site et votre délai</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="configurateur-cp">Code postal du site</label>
+            <input type="text" id="configurateur-cp" name="code_postal" inputmode="numeric" autocomplete="postal-code" placeholder="70000">
+          </div>
+          <div class="champ">
+            <label for="configurateur-date">Date souhaitée</label>
+            <input type="date" id="configurateur-date" name="date">
+          </div>
+        </div>
+        <div class="champ" data-si-location>
+          <label for="configurateur-duree">Durée de location <output class="valeur" for="configurateur-duree" data-sortie-duree>4 semaines</output></label>
+          <input type="range" id="configurateur-duree" name="duree" min="1" max="52" step="1" value="4" data-duree>
+        </div>
+        <div class="champ">
+          <span class="label" id="configurateur-racc-l">Sur place</span>
+          <div class="cases" role="group" aria-labelledby="configurateur-racc-l">
+            <label><input type="checkbox" name="sur_place" value="Réseau d’eau glacée existant" id="configurateur-r1"> Réseau d’eau glacée existant</label>
+            <label><input type="checkbox" name="sur_place" value="Raccords à brides" id="configurateur-r2"> Raccords à brides</label>
+            <label><input type="checkbox" name="sur_place" value="Couplage rapide" id="configurateur-r3"> Couplage rapide</label>
+            <label><input type="checkbox" name="sur_place" value="Installation d’une autre marque" id="configurateur-r4"> Installation d’une autre marque</label>
+          </div>
+        </div>
+        <div class="champ">
+          <label for="configurateur-msg">Votre message</label>
+          <textarea id="configurateur-msg" name="message" placeholder="Process, contraintes du site, accès, horaires…"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="etape-form" data-etape="4">
+        <legend>Vos coordonnées</legend>
+        <div class="grille-2">
+          <div class="champ">
+            <label for="configurateur-civ">Civilité</label>
+            <select id="configurateur-civ" name="civilite"><option value="">Veuillez choisir</option><option>Madame</option><option>Monsieur</option></select>
+          </div>
+          <div class="champ" data-requis>
+            <label for="configurateur-ent">Entreprise</label>
+            <input type="text" id="configurateur-ent" name="entreprise" autocomplete="organization" required>
+          </div>
+          <div class="champ" data-requis>
+            <label for="configurateur-nom">Nom</label>
+            <input type="text" id="configurateur-nom" name="nom" autocomplete="family-name" required>
+          </div>
+          <div class="champ">
+            <label for="configurateur-prenom">Prénom</label>
+            <input type="text" id="configurateur-prenom" name="prenom" autocomplete="given-name">
+          </div>
+          <div class="champ" data-requis>
+            <label for="configurateur-mail">Adresse e-mail</label>
+            <input type="email" id="configurateur-mail" name="email" autocomplete="email" required>
+          </div>
+          <div class="champ">
+            <label for="configurateur-tel">Téléphone</label>
+            <input type="tel" id="configurateur-tel" name="telephone" autocomplete="tel">
+          </div>
+        </div>
+        <label class="consentement" for="configurateur-rgpd"><input type="checkbox" id="configurateur-rgpd" name="consentement" required> <span>J’accepte que NELIS France utilise ces informations pour répondre à ma demande, selon la <a href="mentions-legales.html#donnees">politique de confidentialité</a>.</span></label>
+        <p class="erreur" data-erreur hidden></p>
+      </fieldset>
+
+      <div class="formulaire__resultat" data-resultat hidden tabindex="-1">
+        <p class="mono ok-texte">Demande prête</p>
+        <h3>Merci, votre demande est complète.</h3>
+        <p class="discret">Ceci est une démonstration : aucune donnée n’a été envoyée. Sur le site final, NELIS France vous recontacte dans les plus brefs délais.</p>
+        <dl class="recap" data-recap></dl>
+        <div><button type="button" class="btn btn--ligne" data-recommencer><span>Faire une autre demande</span></button></div>
+      </div>
+
+      <div class="formulaire__nav" data-nav-form>
+        <button type="button" class="btn btn--ligne" data-prec hidden><span>Retour</span></button>
+        <span class="formulaire__compteur mono" data-compteur>Étape 1 sur 4</span>
+        <button type="button" class="btn btn--glace" data-suiv><span>Continuer</span></button>
+        <button type="submit" class="btn btn--glace" data-envoyer hidden><span>Préparer ma demande</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="pied">
+  <div class="pied__givre" aria-hidden="true">
+    <figure class="media" data-img="g-footer-givre" data-kind="ambiance" data-sans-etiquette></figure>
+  </div>
+  <div class="cadre pied__haut">
+    <p class="pied__slogan display">Les pros du froid<br><em>pour un froid pro.</em></p>
+    <a class="btn btn--glace" href="index.html#devis" data-magnetic><span>Demander un devis</span></a>
+  </div>
+  <div class="cadre pied__grille">
+    <div>
+      <h3>NELIS France SAS</h3>
+      <address>9 rue Robert Fontesse<br>70000 Vesoul, France</address>
+      <p class="site__tel"><a href="tel:+33384689650">+33 3 84 68 96 50</a></p>
+      <p><a href="mailto:info@nelisfrance.fr">info@nelisfrance.fr</a></p>
+    </div>
+    <div>
+      <h3>NELIS GmbH</h3>
+      <address>Alte Bahnhofstrasse 27<br>5612 Villmergen, Suisse</address>
+      <p class="site__tel"><a href="tel:+41566119062">+41 56 611 90 62</a></p>
+    </div>
+    <div>
+      <h3>Magasin de Vesoul</h3>
+      <dl>
+        <dt>Lundi</dt><dd>14 h 00 – 18 h 00</dd>
+        <dt>Mardi au samedi</dt><dd>9 h 30 – 12 h 00 · 14 h 00 – 18 h 00</dd>
+      </dl>
+      <p><span data-ouvert-court>Espace de la Motte, Vesoul</span></p>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="groupes-eau-glacee.html">Groupes d’eau glacée</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="index.html#service">Service et maintenance</a></li>
+        <li><a href="index.html#gammes">Gammes et catalogues</a></li>
+        <li><a href="https://www.instagram.com/nelis_france_sas/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61593073722053" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cadre pied__bas mono">
+    <span>© 2026 NELIS France SAS</span>
+    <span>Maquette de démonstration · contenus à valider</span>
+    <button type="button" data-calme aria-pressed="false">Réduire les animations</button>
+    <a href="mentions-legales.html">Mentions légales et données personnelles</a>
+  </div>
+</footer>
+
+<div class="thermo" aria-hidden="true" title="Thermomètre de lecture">
+  <div class="thermo__tube"><div class="thermo__niveau" data-thermo-niveau></div></div>
+  <span class="thermo__val" data-thermo-val>+24 °C</span>
+</div>
+
+<div class="curseur" aria-hidden="true">
+  <div class="curseur__anneau"></div>
+  <div class="curseur__point"></div>
+  <span class="curseur__label" data-curseur-label></span>
+</div>
+
+<script src="assets/js/vendor/gsap.min.js" defer></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/vendor/SplitText.min.js" defer></script>
+<script src="assets/js/vendor/lenis.min.js" defer></script>
+<script src="assets/js/vendor/ogl.min.js" defer></script>
+<script src="assets/js/images.js" defer></script>
+<script src="assets/js/media.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/frost.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+<script src="assets/js/location.js" defer></script>
+</body>
+</html>
