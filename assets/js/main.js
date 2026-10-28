@@ -18,6 +18,26 @@
 
   var NELIS = window.NELIS = { calme: calme, fin: fin, bureau: bureau, anime: anime, lenis: null, $: $, $$: $$, stockage: stockage };
 
+  /* ---------- Hauteurs réelles : en-tête (urgence + navigation) et barre du bas ---------- */
+  (function () {
+    var u = $('.urgence'), n = $('.nav'), barre = $('[data-barre-bas]');
+    function mesurer() {
+      html.style.setProperty('--entete-h', ((u ? u.offsetHeight : 0) + (n ? n.offsetHeight : 0)) + 'px');
+      html.style.setProperty('--barres-h', (barre && getComputedStyle(barre).display !== 'none' ? barre.offsetHeight : 0) + 'px');
+    }
+    mesurer();
+    if (window.ResizeObserver) { var ro = new ResizeObserver(mesurer); [u, n, barre].forEach(function (el) { if (el) ro.observe(el); }); }
+    window.addEventListener('resize', mesurer);
+    if (!barre || !('IntersectionObserver' in window)) return;
+    /* La barre s'efface tant que le hero, le formulaire ou le pied de page est à l'écran */
+    var zones = $$('[data-hero], #devis, .pied'), vues = [];
+    var obs = new IntersectionObserver(function (en) {
+      en.forEach(function (e) { vues[zones.indexOf(e.target)] = e.isIntersecting; });
+      barre.classList.toggle('is-cache', vues.some(Boolean));
+    });
+    zones.forEach(function (z) { obs.observe(z); });
+  })();
+
   function temp(t) {
     var v = Math.round(t);
     return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v) + ' °C';
