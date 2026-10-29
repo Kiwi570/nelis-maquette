@@ -174,8 +174,8 @@ window.NELIS_IMAGES = {
    480,
    784
   ],
-  "r": 0.6712,
-  "alt": "Technicien frigoriste raccordant un manifold sur une tuyauterie en cuivre givrée"
+  "r": 1.3333,
+  "alt": "Deux mains gantées tiennent un manifold à manomètres bleu et rouge, raccordé par des flexibles à une tuyauterie en cuivre givrée"
  },
  "g-palier-climatisation-salon": {
   "w": [
